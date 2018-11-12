@@ -18,17 +18,17 @@ var switchResult;
 switch (yourBrowser) {
     case 'IE': switchResult = ieLog;
     break;
-    case 'Chrome': switchResult = webKitLog + yourBrowser;
-    break;
-    case 'Firefox': switchResult = webKitLog + yourBrowser;
-    break;
-    case 'Opera': switchResult = webKitLog + yourBrowser;
-    break;
+    case 'Chrome': 
+    case 'Firefox':
+    case 'Opera': 
     case 'Safari': switchResult = webKitLog + yourBrowser;
     break;
     default: switchResult = otherLog;
 }
 console.log('SWITCH SOLUTION: ', switchResult);
+
+
+
 
 
 
